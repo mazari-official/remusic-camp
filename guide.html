@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>来場の手引き | Re: Music Camp presented by 混</title>
+<style>
+:root{--acid:#f4ff00;--ink:#070707;--green:#26ff9a;--cyan:#16c8ff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--acid);color:var(--ink);font-family:"Arial Black","Helvetica Neue","Yu Gothic","Hiragino Kaku Gothic ProN",sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.3;background-image:radial-gradient(circle at 20% 20%,rgba(255,255,255,.8),transparent .8px),radial-gradient(circle at 80% 30%,rgba(0,0,0,.35),transparent .7px);background-size:4px 4px,5px 5px;mix-blend-mode:multiply}
+body:after{content:"";position:fixed;inset:-20%;pointer-events:none;opacity:.38;background:radial-gradient(circle at 18% 18%,rgba(15,199,255,.5),transparent 28%),radial-gradient(circle at 85% 35%,rgba(38,255,154,.45),transparent 34%),radial-gradient(circle at 50% 75%,rgba(255,255,255,.62),transparent 30%);filter:blur(16px)}
+.site{position:relative;z-index:1}
+.ticker{position:fixed;top:0;left:0;right:0;height:34px;z-index:20;overflow:hidden;background:var(--ink);color:var(--acid);font-size:13px;letter-spacing:.08em;white-space:nowrap}
+.ticker span{display:inline-block;padding-left:100%;animation:ticker 22s linear infinite;line-height:34px}@keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-100%)}}
+header{position:sticky;top:34px;z-index:18;border-bottom:2px solid var(--ink);background:rgba(244,255,0,.88);backdrop-filter:blur(18px)}
+.nav{width:min(1180px,calc(100% - 28px));margin:0 auto;min-height:82px;display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center;padding:8px 0}
+.brand{display:flex;align-items:center;gap:14px;text-decoration:none;color:var(--ink)}
+.brand-mark{width:50px;height:50px;border-radius:50%;background:var(--ink);color:var(--acid);display:grid;place-items:center;font-size:28px;font-weight:950;box-shadow:8px 8px 0 rgba(0,0,0,.15)}
+.brand-text{line-height:.88;letter-spacing:-.08em;font-size:clamp(22px,3vw,38px);font-weight:950;text-transform:uppercase}.brand-sub{display:block;font-size:10px;letter-spacing:.12em;margin-top:4px}
+.nav-links{display:flex;flex-wrap:wrap;gap:8px;justify-content:flex-end}.nav-links a{color:var(--ink);text-decoration:none;border:2px solid var(--ink);border-radius:999px;padding:8px 12px;background:rgba(255,255,255,.22);font-size:12px;font-weight:900}
+.hero{width:min(1180px,calc(100% - 28px));margin:0 auto;padding:96px 0 54px;border-bottom:3px solid var(--ink)}
+.kicker{font-size:13px;letter-spacing:.18em;margin-bottom:12px;font-weight:900}
+h1{margin:0;font-size:clamp(64px,12vw,170px);line-height:.78;letter-spacing:-.1em;text-transform:uppercase}
+.lead{max-width:780px;margin:34px 0 0;font-family:"Yu Gothic","Hiragino Kaku Gothic ProN",sans-serif;font-weight:700;line-height:2;font-size:16px}
+.guide-menu{width:min(1180px,calc(100% - 28px));margin:0 auto;padding:30px 0;display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.guide-menu a,.btn{border:2px solid var(--ink);border-radius:999px;padding:12px 14px;color:var(--ink);text-decoration:none;font-weight:950;background:rgba(255,255,255,.24);box-shadow:5px 5px 0 rgba(0,0,0,.12);display:inline-flex}
+.section{width:min(980px,calc(100% - 28px));margin:0 auto;padding:54px 0;border-top:3px solid var(--ink)}
+h2{margin:0 0 26px;font-size:clamp(42px,7vw,86px);line-height:.82;letter-spacing:-.1em;text-transform:uppercase}
+.box{border:3px solid var(--ink);border-radius:34px;background:rgba(255,255,255,.28);padding:28px;box-shadow:10px 10px 0 rgba(0,0,0,.12);margin-bottom:18px}
+.box h3{margin:0 0 14px;font-size:28px;letter-spacing:-.06em}.box p,.box li{font-family:"Yu Gothic","Hiragino Kaku Gothic ProN",sans-serif;font-weight:700;line-height:1.9;font-size:15px}.box ul{margin:0;padding-left:1.2em}
+.note{border:2px dotted var(--ink);border-radius:24px;padding:18px 20px;margin-top:18px;font-family:"Yu Gothic","Hiragino Kaku Gothic ProN",sans-serif;font-weight:700;line-height:1.8;background:rgba(244,255,0,.42)}
+.btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}.btn{background:var(--acid)}
+footer{width:min(1180px,calc(100% - 28px));margin:0 auto;padding:40px 0 54px;display:flex;justify-content:space-between;gap:20px;border-top:3px solid var(--ink);font-size:13px;font-weight:900;letter-spacing:.03em}
+.instagram-link{display:inline-flex;align-items:center;gap:8px;color:var(--ink);text-decoration:none;border:2px solid var(--ink);border-radius:999px;padding:10px 14px;font-weight:950;margin-top:14px;background:rgba(255,255,255,.22)}
+.menu-toggle{display:none;position:fixed;top:48px;right:14px;z-index:40;width:54px;height:54px;border:2px solid var(--ink);border-radius:50%;background:var(--acid);box-shadow:6px 6px 0 rgba(0,0,0,.18);cursor:pointer}.menu-toggle span{position:absolute;left:13px;right:13px;height:3px;background:var(--ink);border-radius:999px}.menu-toggle span:nth-child(1){top:16px}.menu-toggle span:nth-child(2){top:25px}.menu-toggle span:nth-child(3){top:34px}.mobile-menu{display:none;position:fixed;top:108px;right:14px;left:14px;z-index:39;border:3px solid var(--ink);border-radius:28px;background:rgba(244,255,0,.96);box-shadow:10px 10px 0 rgba(0,0,0,.18);padding:18px}.mobile-menu a{display:flex;justify-content:space-between;color:var(--ink);text-decoration:none;border-bottom:2px dotted var(--ink);padding:13px 6px;font-size:18px;font-weight:950}#menu-open{position:absolute;opacity:0;pointer-events:none}#menu-open:checked~.mobile-menu{display:block}
+@media(max-width:980px){.guide-menu{grid-template-columns:repeat(2,1fr)}.menu-toggle{display:block}.nav-links{display:none}}
+@media(max-width:640px){.guide-menu{grid-template-columns:1fr}.box{padding:22px}.hero{padding-top:72px}footer{display:block;line-height:2}}
+</style>
+</head>
+<body>
+<div class="site">
+<input type="checkbox" id="menu-open">
+<label class="menu-toggle" for="menu-open" aria-label="メニューを開く"><span></span><span></span><span></span></label>
+<div class="mobile-menu">
+<a href="index.html">トップ <span>→</span></a>
+<a href="#first">はじめに <span>→</span></a>
+<a href="#manners">会場マナー <span>→</span></a>
+<a href="#camp">キャンプ <span>→</span></a>
+<a href="#access">アクセス <span>→</span></a>
+<a href="#ticket">チケット <span>→</span></a>
+<a href="#contact">お問い合わせ <span>→</span></a>
+</div>
+
+<div class="ticker"><span>Re: Music Camp presented by 混　／　来場の手引き　／　09.26 SAT - 09.27 SUN　／　at REWILD GREEN FIELD CAMP　／　</span></div>
+<header><nav class="nav"><a href="index.html" class="brand"><div class="brand-mark">混</div><div class="brand-text">Re: Music Camp<span class="brand-sub">GUIDE</span></div></a><div class="nav-links"><a href="#first">はじめに</a><a href="#manners">会場マナー</a><a href="#camp">キャンプ</a><a href="#access">アクセス</a><a href="#ticket">チケット</a></div></nav></header>
+
+<main>
+<section class="hero"><div class="kicker">GUIDE FOR EVERYONE</div><h1>来場の<br>手引き</h1><p class="lead">Re: Music Campは、音楽を中心に様々なカルチャーや人が織りまざるキャンプイベントです。参加する全員が気持ちよく過ごせるよう、来場前にこちらの案内をご確認ください。</p></section>
+
+<nav class="guide-menu"><a href="#first">はじめに</a><a href="#manners">会場マナー</a><a href="#camp">キャンプ</a><a href="#belongings">持ち物</a><a href="#access">アクセス</a><a href="#ticket">チケット</a><a href="#weather">雨天時</a><a href="#contact">お問い合わせ</a></nav>
+
+<section id="first" class="section"><div class="kicker">01 / INTRODUCTION</div><h2>はじめに</h2><div class="box"><h3>Re: Music Campについて</h3><p>音楽、キャンプ、食、マーケット、ワークショップなどがゆるやかに混ざる2日間です。会場は自然の中にあるキャンプ場のため、通常のライブハウスや都市型フェスとは異なる準備と配慮が必要です。</p><div class="note">出演者、出店者、タイムテーブル、当日の詳細ルールは決まり次第、公式サイトおよびInstagramで順次お知らせします。</div></div></section>
+
+<section id="manners" class="section"><div class="kicker">02 / MANNERS</div><h2>会場マナー</h2><div class="box"><h3>音量・過ごし方</h3><ul><li>夜間・早朝は周囲の方や近隣環境に配慮し、大きな声や音出しはお控えください。</li><li>ステージ・出店・キャンプエリアでは、スタッフの案内に従ってください。</li><li>無断撮影や、他のお客様が写り込む形での投稿にはご配慮ください。</li></ul></div><div class="box"><h3>ゴミについて</h3><ul><li>ゴミはできる限り各自でお持ち帰りください。</li><li>会場に分別場所を設ける場合は、指定のルールに沿って分別をお願いします。</li><li>キャンプサイト、駐車場、周辺道路へのポイ捨てはおやめください。</li></ul></div></section>
+
+<section id="camp" class="section"><div class="kicker">03 / CAMP</div><h2>キャンプ利用</h2><div class="box"><h3>会場について</h3><p>会場は千葉県勝浦市のREWILD GREEN FIELD CAMPです。天然芝のフリーサイトを中心としたキャンプ場のため、テント設営、火器利用、夜間の過ごし方など、会場ルールを守ってお楽しみください。</p><div class="btns"><a class="btn" href="https://www.nap-camp.com/chiba/14307" target="_blank" rel="noopener">キャンプ場サイトを見る</a></div></div><div class="box"><h3>火器・焚き火</h3><ul><li>焚き火や調理器具の使用可否・使用エリアは、当日の会場ルールに従ってください。</li><li>直火は禁止となる可能性があります。焚き火台や耐火シートなどの利用を想定してください。</li><li>火の後始末は必ず各自の責任で行ってください。</li></ul></div></section>
+
+<section id="belongings" class="section"><div class="kicker">04 / BELONGINGS</div><h2>持ち物</h2><div class="box"><h3>あると便利なもの</h3><ul><li>チケット確認用のスマートフォン、モバイルバッテリー</li><li>雨具、防寒具、動きやすい靴、着替え</li><li>懐中電灯・ヘッドライト、タオル、虫よけ</li><li>キャンプ泊の方は、テント、寝袋、マット、ランタンなど</li></ul></div></section>
+
+<section id="access" class="section"><div class="kicker">05 / ACCESS</div><h2>アクセス</h2><div class="box"><h3>会場所在地</h3><p>REWILD GREEN FIELD CAMP<br>〒299-5217 千葉県勝浦市大楠1537</p><div class="btns"><a class="btn" href="https://www.google.com/maps/search/?api=1&query=REWILD%20GREEN%20FIELD%20CAMP%20%E5%8D%83%E8%91%89%E7%9C%8C%E5%8B%9D%E6%B5%A6%E5%B8%82%E5%A4%A7%E6%A5%A01537" target="_blank" rel="noopener">Googleマップで見る</a></div></div><div class="box"><h3>来場方法</h3><ul><li>車での来場、公共交通機関での来場方法は公式サイトのアクセス欄をご確認ください。</li><li>駐車場や入場導線の詳細は、確定次第こちらの手引きに追記します。</li></ul></div></section>
+
+<section id="ticket" class="section"><div class="kicker">06 / TICKET</div><h2>チケット</h2><div class="box"><h3>早割チケット</h3><p>早割チケットは7,000円です。日帰り・宿泊共通でご利用いただけます。</p><div class="btns"><a class="btn" href="https://peatix.com/event/5039844" target="_blank" rel="noopener">購入する</a></div></div><div class="box"><h3>受付について</h3><ul><li>当日はチケット画面を確認できる状態でお越しください。</li><li>受付方法、リストバンド、再入場ルールは決まり次第追記します。</li></ul></div></section>
+
+<section id="weather" class="section"><div class="kicker">07 / WEATHER</div><h2>雨天時</h2><div class="box"><h3>雨天・荒天時の対応</h3><ul><li>雨天決行を基本としつつ、荒天時は安全を最優先に判断します。</li><li>開催可否や運営上の変更がある場合は、公式サイトおよびInstagramでお知らせします。</li><li>山間・キャンプ場での開催となるため、防寒具・雨具・替えの靴下などをご準備ください。</li></ul></div></section>
+
+<section id="contact" class="section"><div class="kicker">08 / CONTACT</div><h2>お問い合わせ</h2><div class="box"><h3>各種フォーム</h3><p>出店・出演に関するお問い合わせと、その他お問い合わせはフォームを分けています。</p><div class="btns"><a class="btn" href="https://forms.gle/FLNYZ4KpQBZrKouC7" target="_blank" rel="noopener">出店・出演フォーム</a><a class="btn" href="https://forms.gle/2A5U9u8quS8ozFKfA" target="_blank" rel="noopener">お問い合わせフォーム</a></div></div></section>
+
+<section class="section"><a class="btn" href="index.html">トップページへ戻る</a></section>
+</main>
+
+<footer><div>© 2026 Re: Music Camp presented by 混</div><div>Rediscovery / Reconnect / Recreate / Rejoice<br><a class="instagram-link" href="https://www.instagram.com/maze.officialevents?igsh=MWppeTVhemRkMHV0bg%3D%3D&utm_source=qr" target="_blank" rel="noopener">Instagramを見る</a></div></footer>
+</div>
+</body>
+</html>
