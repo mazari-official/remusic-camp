@@ -48,6 +48,13 @@ footer{width:min(1180px,calc(100% - 28px));margin:0 auto;padding:40px 0 54px;dis
 footer .instagram-icon-link{color:var(--ink);background:rgba(255,255,255,.22)}
 .contact .instagram-icon-link{color:var(--acid);background:transparent}
 
+
+/* mobile tap fix */
+.btn,.btns,.card,.box{position:relative;z-index:3}
+.mobile-menu{pointer-events:none}
+#menu-open:checked ~ .mobile-menu{pointer-events:auto}
+a[href*="nap-camp.com"],a[href*="google.com/maps"],a[href*="peatix.com"],a[href*="forms.gle"],a[href*="instagram.com"]{position:relative;z-index:5;pointer-events:auto}
+
 </style>
 </head>
 <body>
@@ -91,7 +98,7 @@ footer .instagram-icon-link{color:var(--ink);background:rgba(255,255,255,.22)}
 <section class="section"><a class="btn" href="index.html">トップページへ戻る</a></section>
 </main>
 
-<footer><div>© 2026 Re: Music Camp presented by 混</div><div>Rediscovery / Reconnect / Recreate / Rejoice<br><a class="instagram-icon-link" href="https://www.instagram.com/maze.officialevents?igsh=MWppeTVhemRkMHV0bg%3D%3D&utm_source=qr" target="_blank" rel="noopener" aria-label="混 Instagram">
+<footer><div>© 2026 Re: Music Camp presented by 混</div><div>Rediscovery / / Reconnect / Recreate / Rejoice<br><a class="instagram-icon-link" href="https://www.instagram.com/maze.officialevents?igsh=MWppeTVhemRkMHV0bg%3D%3D&utm_source=qr" target="_blank" rel="noopener" aria-label="混 Instagram">
   <svg class="instagram-icon" viewBox="0 0 24 24" aria-hidden="true">
     <rect x="3" y="3" width="18" height="18" rx="5"></rect>
     <circle cx="12" cy="12" r="4"></circle>
