@@ -55,6 +55,11 @@ footer .instagram-icon-link{color:var(--ink);background:rgba(255,255,255,.22)}
 #menu-open:checked ~ .mobile-menu{pointer-events:auto}
 a[href*="nap-camp.com"],a[href*="google.com/maps"],a[href*="peatix.com"],a[href*="forms.gle"],a[href*="instagram.com"]{position:relative;z-index:5;pointer-events:auto}
 
+
+/* mobile menu close fix */
+.mobile-menu{display:none;pointer-events:none}
+#menu-open:checked ~ .mobile-menu{display:block;pointer-events:auto}
+
 </style>
 </head>
 <body>
@@ -106,5 +111,20 @@ a[href*="nap-camp.com"],a[href*="google.com/maps"],a[href*="peatix.com"],a[href*
   </svg>
 </a></div></footer>
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const menuCheckbox = document.getElementById('menu-open');
+  const menuLinks = document.querySelectorAll('.mobile-menu a');
+  menuLinks.forEach(function (link) {
+    link.addEventListener('click', function () {
+      if (menuCheckbox) {
+        menuCheckbox.checked = false;
+      }
+    });
+  });
+});
+</script>
+
 </body>
 </html>
