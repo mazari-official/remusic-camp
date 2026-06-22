@@ -15,9 +15,14 @@ body:after{content:"";position:fixed;inset:-20%;pointer-events:none;opacity:.38;
 .ticker span{display:inline-block;padding-left:100%;animation:ticker 22s linear infinite;line-height:34px}@keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-100%)}}
 header{position:sticky;top:34px;z-index:18;border-bottom:2px solid var(--ink);background:rgba(244,255,0,.88);backdrop-filter:blur(18px)}
 .nav{width:min(1180px,calc(100% - 28px));margin:0 auto;min-height:82px;display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center;padding:8px 0}
+
+
+
 .brand{display:flex;align-items:center;gap:14px;text-decoration:none;color:var(--ink)}
-.brand-mark{width:50px;height:50px;border-radius:50%;background:var(--ink);color:var(--acid);display:grid;place-items:center;font-size:28px;font-weight:950;box-shadow:8px 8px 0 rgba(0,0,0,.15)}
-.brand-text{line-height:.88;letter-spacing:-.08em;font-size:clamp(22px,3vw,38px);font-weight:950;text-transform:uppercase}.brand-sub{display:block;font-size:10px;letter-spacing:.12em;margin-top:4px}
+.brand-mark{width:50px;height:50px;border-radius:50%;background:var(--ink);position:relative;box-shadow:8px 8px 0 rgba(0,0,0,.15);overflow:hidden;display:grid;place-items:center}
+.brand-mark img{width:42px;height:auto;display:block;object-fit:contain}
+.brand-text{line-height:.88;letter-spacing:-.08em;font-size:clamp(22px,3vw,38px);font-weight:950;text-transform:uppercase}
+.brand-sub{display:block;font-size:10px;letter-spacing:.12em;margin-top:4px;font-weight:900}
 .nav-links{display:flex;flex-wrap:wrap;gap:8px;justify-content:flex-end}.nav-links a{color:var(--ink);text-decoration:none;border:2px solid var(--ink);border-radius:999px;padding:8px 12px;background:rgba(255,255,255,.22);font-size:12px;font-weight:900}
 .hero{width:min(1180px,calc(100% - 28px));margin:0 auto;padding:96px 0 54px;border-bottom:3px solid var(--ink)}
 .kicker{font-size:13px;letter-spacing:.18em;margin-bottom:12px;font-weight:900}
@@ -36,6 +41,13 @@ footer{width:min(1180px,calc(100% - 28px));margin:0 auto;padding:40px 0 54px;dis
 .menu-toggle{display:none;position:fixed;top:48px;right:14px;z-index:40;width:54px;height:54px;border:2px solid var(--ink);border-radius:50%;background:var(--acid);box-shadow:6px 6px 0 rgba(0,0,0,.18);cursor:pointer}.menu-toggle span{position:absolute;left:13px;right:13px;height:3px;background:var(--ink);border-radius:999px}.menu-toggle span:nth-child(1){top:16px}.menu-toggle span:nth-child(2){top:25px}.menu-toggle span:nth-child(3){top:34px}.mobile-menu{display:none;position:fixed;top:108px;right:14px;left:14px;z-index:39;border:3px solid var(--ink);border-radius:28px;background:rgba(244,255,0,.96);box-shadow:10px 10px 0 rgba(0,0,0,.18);padding:18px}.mobile-menu a{display:flex;justify-content:space-between;color:var(--ink);text-decoration:none;border-bottom:2px dotted var(--ink);padding:13px 6px;font-size:18px;font-weight:950}#menu-open{position:absolute;opacity:0;pointer-events:none}#menu-open:checked~.mobile-menu{display:block}
 @media(max-width:980px){.guide-menu{grid-template-columns:repeat(2,1fr)}.menu-toggle{display:block}.nav-links{display:none}}
 @media(max-width:640px){.guide-menu{grid-template-columns:1fr}.box{padding:22px}.hero{padding-top:72px}footer{display:block;line-height:2}}
+
+.instagram-icon-link{display:inline-grid;place-items:center;width:48px;height:48px;border:2px solid currentColor;border-radius:50%;text-decoration:none;margin-top:14px;box-shadow:5px 5px 0 rgba(0,0,0,.18);transition:.18s ease}
+.instagram-icon-link:hover{transform:translateY(-2px);box-shadow:7px 7px 0 rgba(0,0,0,.22)}
+.instagram-icon{width:25px;height:25px;fill:none;stroke:currentColor;stroke-width:2.1;stroke-linecap:round;stroke-linejoin:round}
+footer .instagram-icon-link{color:var(--ink);background:rgba(255,255,255,.22)}
+.contact .instagram-icon-link{color:var(--acid);background:transparent}
+
 </style>
 </head>
 <body>
@@ -53,7 +65,7 @@ footer{width:min(1180px,calc(100% - 28px));margin:0 auto;padding:40px 0 54px;dis
 </div>
 
 <div class="ticker"><span>Re: Music Camp presented by 混　／　来場の手引き　／　09.26 SAT - 09.27 SUN　／　at REWILD GREEN FIELD CAMP　／　</span></div>
-<header><nav class="nav"><a href="index.html" class="brand"><div class="brand-mark">混</div><div class="brand-text">Re: Music Camp<span class="brand-sub">GUIDE</span></div></a><div class="nav-links"><a href="#first">はじめに</a><a href="#manners">会場マナー</a><a href="#camp">キャンプ</a><a href="#access">アクセス</a><a href="#ticket">チケット</a></div></nav></header>
+<header><nav class="nav"><a href="index.html" class="brand"><div class="brand-mark"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGEAAABFCAYAAABaO4iDAAACcElEQVR4nO2cwXLDIAxE5U7+/2t7d0+kjoNBCIRWiDfTQzNxgF2EMAYfvyd5hVPzY3K5ovJewopY0tJtrt/tMYRb5ikpZ7QJrXHVUuHemM1dXypfWl66jt22XhNGCqMhSEv5Gr/NMuJH+OPpbyRPv+c3azHrzjVBS/hcOaX/PVJtQ82EGcKXyl6FYltKJliKsJIBicc2SXKCJgetaUARJBMiGJBtX8kEjbtNhLKs+TKiFgkHzRNo9Sh4hDscaRoRYRgqYp0TIg1DVz46nbUJRMGjgIi/dhReqBu5CBZrVDNBU3xPuYAzbLa2573AVzLBi0AaSHOVqGPlTPAovusEn0yYLfxI0dAMaI6Gn9YLwEAzgEigJ8IUNTzbBABeZDNVFO1KAGKoXikxe5qzX7nXefY+oyF43HdUQmqKaQdczYQ7LqL7mphnj9He88Iw7rOjEaJsYRvJTVF7RXQxBCDxdJ8w67FmZMPe+nKeMXM+23TAuWO+ix6596rAMWGLrgxnL+pGGdS9qKvzMcTvVVQAnkywiIKwsy6kSIiyjPHVRiQTwpIzwTohR4iGD9AiwboDaFDtVGgmJKyiYXS5akdotVnprFzu4GXzIZFI9K4ci6/dJvzTe1xY+s6NbQICqCZEuHF7RwOqCaHQeMa8aWRHgi0nUflBPwIo9VBlRwIAyCasuI6UBeXdFqFBjoQwSDZ/rYpFW6vnmK0ZdZa4tHntePh8KhwTvJ3iaXmZoXW7TiI60HOCtUhTQDchBNsEe05UEyLNyqAjIUQ+INpb4yFAjARvU+JeqlNUz6/gcQNSJCQDIkUBEeEdErE2YHYkHkREf3E+bH6KH2sUAAAAAElFTkSuQmCC" alt="混 logo"></div><div class="brand-text">Re: Music Camp<span class="brand-sub">presented by 混</span></div></a><div class="nav-links"><a href="#first">はじめに</a><a href="#manners">会場マナー</a><a href="#camp">キャンプ</a><a href="#access">アクセス</a><a href="#ticket">チケット</a></div></nav></header>
 
 <main>
 <section class="hero"><div class="kicker">GUIDE FOR EVERYONE</div><h1>来場の<br>手引き</h1><p class="lead">Re: Music Campは、音楽を中心に様々なカルチャーや人が織りまざるキャンプイベントです。参加する全員が気持ちよく過ごせるよう、来場前にこちらの案内をご確認ください。</p></section>
@@ -79,7 +91,13 @@ footer{width:min(1180px,calc(100% - 28px));margin:0 auto;padding:40px 0 54px;dis
 <section class="section"><a class="btn" href="index.html">トップページへ戻る</a></section>
 </main>
 
-<footer><div>© 2026 Re: Music Camp presented by 混</div><div>Rediscovery / Reconnect / Recreate / Rejoice<br><a class="instagram-link" href="https://www.instagram.com/maze.officialevents?igsh=MWppeTVhemRkMHV0bg%3D%3D&utm_source=qr" target="_blank" rel="noopener">Instagramを見る</a></div></footer>
+<footer><div>© 2026 Re: Music Camp presented by 混</div><div>Rediscovery / Reconnect / Recreate / Rejoice<br><a class="instagram-icon-link" href="https://www.instagram.com/maze.officialevents?igsh=MWppeTVhemRkMHV0bg%3D%3D&utm_source=qr" target="_blank" rel="noopener" aria-label="混 Instagram">
+  <svg class="instagram-icon" viewBox="0 0 24 24" aria-hidden="true">
+    <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+    <circle cx="12" cy="12" r="4"></circle>
+    <circle cx="17.5" cy="6.5" r="1.2"></circle>
+  </svg>
+</a></div></footer>
 </div>
 </body>
 </html>
