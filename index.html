@@ -75,6 +75,15 @@ a[href*="nap-camp.com"],a[href*="google.com/maps"],a[href*="peatix.com"],a[href*
 .mobile-menu{display:none;pointer-events:none}
 #menu-open:checked ~ .mobile-menu{display:block;pointer-events:auto}
 
+
+/* anchor offset fix */
+html{scroll-padding-top:150px}
+.section,.hero,[id]{scroll-margin-top:150px}
+@media(max-width:640px){
+  html{scroll-padding-top:138px}
+  .section,.hero,[id]{scroll-margin-top:138px}
+}
+
 </style></head>
 <body><div class="site">
     <input type="checkbox" id="menu-open">
@@ -132,18 +141,42 @@ a[href*="nap-camp.com"],a[href*="google.com/maps"],a[href*="peatix.com"],a[href*
     <circle cx="17.5" cy="6.5" r="1.2"></circle>
   </svg>
 </a></div></footer></div>
+
 <script>
 document.addEventListener('DOMContentLoaded', function () {
   const menuCheckbox = document.getElementById('menu-open');
-  const menuLinks = document.querySelectorAll('.mobile-menu a');
+  const menuLinks = document.querySelectorAll('.mobile-menu a[href^="#"], .nav-links a[href^="#"], .guide-menu a[href^="#"]');
+
+  function getOffset() {
+    const header = document.querySelector('header');
+    const ticker = document.querySelector('.ticker');
+    const headerH = header ? header.offsetHeight : 0;
+    const tickerH = ticker ? ticker.offsetHeight : 0;
+    return headerH + tickerH + 18;
+  }
+
   menuLinks.forEach(function (link) {
-    link.addEventListener('click', function () {
+    link.addEventListener('click', function (event) {
+      const href = link.getAttribute('href');
+      if (!href || href === '#') return;
+      const target = document.querySelector(href);
+      if (!target) return;
+
+      event.preventDefault();
       if (menuCheckbox) {
         menuCheckbox.checked = false;
+      }
+
+      const top = target.getBoundingClientRect().top + window.pageYOffset - getOffset();
+      window.scrollTo({ top: top, behavior: 'smooth' });
+
+      if (history.pushState) {
+        history.pushState(null, '', href);
       }
     });
   });
 });
 </script>
+
 
 </body></html>
