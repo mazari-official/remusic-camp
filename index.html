@@ -98,6 +98,8 @@ html{scroll-padding-top:150px}
 .artist-card-visual.contain-frame,.artist-modal-image.contain-frame{background:#111}
 .artist-modal-image.contain-frame{aspect-ratio:4/5;align-self:center}
 .artist-contained-photo{object-fit:contain!important;filter:none!important;background:#111}
+.kiyosumi-card-photo{object-fit:cover!important;object-position:center 43%}
+.adc-card-photo{transform:translateY(-8px) scale(1.03);transform-origin:center}
 .artist-card-visual span{font-size:72px;letter-spacing:-.12em;font-weight:950;opacity:.9}
 .artist-card-name{padding:16px 18px 18px;font-size:24px;line-height:.95;letter-spacing:-.06em;text-align:center;font-weight:950}
 .artist-card:hover{transform:translateY(-3px)}
@@ -237,11 +239,11 @@ html{scroll-padding-top:150px}
     <div class="artist-card-name">Pancake JAM</div>
   </a>
   <a class="artist-card" href="#artist-modal-08">
-    <div class="artist-card-visual has-photo contain-frame"><img class="artist-photo artist-contained-photo" src="assets/kiyosumi-yofuke-kaiwai.jpg" alt="清澄夜更界隈"></div>
+    <div class="artist-card-visual has-photo contain-frame"><img class="artist-photo artist-contained-photo kiyosumi-card-photo" src="assets/kiyosumi-yofuke-kaiwai.jpg" alt="清澄夜更界隈"></div>
     <div class="artist-card-name">清澄夜更界隈</div>
   </a>
   <a class="artist-card" href="#artist-modal-09">
-    <div class="artist-card-visual has-photo contain-frame"><img class="artist-photo artist-contained-photo" src="assets/adc.jpg" alt="A.D.C."></div>
+    <div class="artist-card-visual has-photo contain-frame"><img class="artist-photo artist-contained-photo adc-card-photo" src="assets/adc.jpg" alt="A.D.C."></div>
     <div class="artist-card-name">A.D.C.</div>
   </a>
 </div>
