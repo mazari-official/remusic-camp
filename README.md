@@ -1,6 +1,8 @@
 # Re: Music Camp Website
 
 今回の更新：
+- ARTIST一覧に「Valwind」「NAKAHARA BROTHERS」を追加
+- 2組の写真と紹介文を一覧カード・詳細ポップアップへ反映
 - TOPの清澄夜更界隈の写真をさらに上寄せし、バンド名を上端へ配置
 - TOPの清澄夜更界隈・A.D.C.写真の表示位置を調整
 - ARTIST一覧に「清澄夜更界隈」「A.D.C.」を追加
