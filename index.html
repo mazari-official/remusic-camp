@@ -95,6 +95,9 @@ html{scroll-padding-top:150px}
 .artist-card-visual.group-frame,.artist-modal-image.group-frame{background:#111}
 .artist-modal-image.group-frame{aspect-ratio:3/2;align-self:center}
 .artist-group-photo{object-fit:contain!important;filter:none!important;background:#111}
+.artist-card-visual.contain-frame,.artist-modal-image.contain-frame{background:#111}
+.artist-modal-image.contain-frame{aspect-ratio:4/5;align-self:center}
+.artist-contained-photo{object-fit:contain!important;filter:none!important;background:#111}
 .artist-card-visual span{font-size:72px;letter-spacing:-.12em;font-weight:950;opacity:.9}
 .artist-card-name{padding:16px 18px 18px;font-size:24px;line-height:.95;letter-spacing:-.06em;text-align:center;font-weight:950}
 .artist-card:hover{transform:translateY(-3px)}
@@ -233,6 +236,14 @@ html{scroll-padding-top:150px}
     <div class="artist-card-visual has-photo group-frame"><img class="artist-photo artist-group-photo" src="assets/pancake-jam.jpeg" alt="Pancake JAM"></div>
     <div class="artist-card-name">Pancake JAM</div>
   </a>
+  <a class="artist-card" href="#artist-modal-08">
+    <div class="artist-card-visual has-photo contain-frame"><img class="artist-photo artist-contained-photo" src="assets/kiyosumi-yofuke-kaiwai.jpg" alt="清澄夜更界隈"></div>
+    <div class="artist-card-name">清澄夜更界隈</div>
+  </a>
+  <a class="artist-card" href="#artist-modal-09">
+    <div class="artist-card-visual has-photo contain-frame"><img class="artist-photo artist-contained-photo" src="assets/adc.jpg" alt="A.D.C."></div>
+    <div class="artist-card-name">A.D.C.</div>
+  </a>
 </div>
 
 <div id="artist-modal-01" class="artist-modal">
@@ -313,6 +324,28 @@ html{scroll-padding-top:150px}
       <p>「音楽で世界を丸く」をモットーに、誰かの日常にそっと寄り添い、明日を少し前向きにできる音楽と、シェアハウスで同じ時間を過ごしてきたからこそ出せるGrooveとSoundを届けたいと思っています。</p>
     </div>
     <div class="artist-modal-image has-photo group-frame"><img class="artist-photo artist-group-photo" src="assets/pancake-jam.jpeg" alt="Pancake JAM"></div>
+  </div>
+</div>
+
+<div id="artist-modal-08" class="artist-modal">
+  <div class="artist-modal-card">
+    <a class="artist-modal-close" href="#artist">閉じる</a>
+    <div class="artist-modal-text">
+      <h3>清澄夜更界隈</h3>
+      <p>Yuji（Vo）／Mattzn（Dr）／Josh（Ba）／Ryu（Key）<br><br>2026年清澄白河WNで結成、KeyのRyuが酔った勢いで作ったバンド。<br><br>元は「清澄色気界隈」でしたが、ボーカルが「色気」を口にしたくないと拒否。夜更けに集まることが多いのでこのバンド名になりました。色気は各自で補っています。<br><br>当日はJ-POP／R&amp;B／ファンクをやります！<br>夜更けのラウンジでかかっていそうな曲を、夜更けのテンションで。一緒に夜更かししちゃいましょう。</p>
+    </div>
+    <div class="artist-modal-image has-photo contain-frame"><img class="artist-photo artist-contained-photo" src="assets/kiyosumi-yofuke-kaiwai.jpg" alt="清澄夜更界隈"></div>
+  </div>
+</div>
+
+<div id="artist-modal-09" class="artist-modal">
+  <div class="artist-modal-card">
+    <a class="artist-modal-close" href="#artist">閉じる</a>
+    <div class="artist-modal-text">
+      <h3>A.D.C.</h3>
+      <p>ネイバーズ軽音部で出会い、ともに大のアニソン好きとして意気投合！ギター歴の長いだいきくんと、日本語・英語・ロシア語を操るマルチリンガルボーカルヴァレリーのデュオ。フェスで大人気のアニソンを熱いテンションでお届けします！会場全員で盛り上がりましょう！</p>
+    </div>
+    <div class="artist-modal-image has-photo contain-frame"><img class="artist-photo artist-contained-photo" src="assets/adc.jpg" alt="A.D.C."></div>
   </div>
 </div>
 </section>
