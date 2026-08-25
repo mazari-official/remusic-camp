@@ -1,6 +1,7 @@
 # Re: Music Camp Website
 
 今回の更新：
+- NAKAHARA BROTHERSのロゴ文字が画像中央に来るよう位置を調整
 - ARTIST一覧に「Valwind」「NAKAHARA BROTHERS」を追加
 - 2組の写真と紹介文を一覧カード・詳細ポップアップへ反映
 - TOPの清澄夜更界隈の写真をさらに上寄せし、バンド名を上端へ配置
