@@ -158,16 +158,24 @@ html{scroll-padding-top:150px}
 .shop-card-visual{height:300px;margin:16px 16px 0;border:2px solid var(--ink);position:relative;overflow:hidden;display:grid;place-items:center;text-align:center}.shop-card-visual::before{content:"";position:absolute;inset:-20%;background:repeating-radial-gradient(circle at 30% 20%,transparent 0 8px,rgba(0,0,0,.14) 9px 10px);transform:rotate(-8deg)}
 .shop-card:nth-child(2) .shop-card-visual{background:linear-gradient(145deg,#070707 0 48%,#26ff9a 48% 72%,#f1f1ed 72%)}.shop-card:nth-child(3) .shop-card-visual{background:linear-gradient(135deg,#16c8ff 0 40%,#9b6cff 40% 67%,#f4ff00 67%)}
 .shop-card-visual span{position:relative;z-index:1;font-size:clamp(28px,3.4vw,52px);line-height:.9;letter-spacing:-.07em;font-weight:950;text-shadow:2px 2px 0 rgba(255,255,255,.45)}
-.shop-card-meta{padding:14px 18px 18px}.shop-card-meta small{display:block;font-size:11px;letter-spacing:.16em;margin-bottom:5px}.shop-card-meta h3{margin:0;font-size:25px;letter-spacing:-.05em}.shop-card-meta p{margin:8px 0 0;font-family:"Yu Gothic","Hiragino Kaku Gothic ProN",sans-serif;font-size:13px;font-weight:700}
-.shop-card-visual.has-shop-image{background:#004742}.shop-card-visual.has-shop-image::before{display:none}.shop-card-visual.has-shop-image img{width:100%;height:100%;object-fit:contain;display:block;padding:0;transform:translateY(-3%) scale(1.04)}
+.shop-card-meta{padding:14px 18px 18px}.shop-card-meta small{display:block;font-size:11px;letter-spacing:.16em;margin-bottom:5px}.shop-card-meta h3{margin:0;font-size:25px;letter-spacing:-.05em}.shop-card-meta h3.long-title{font-size:20px;line-height:1.2;letter-spacing:-.04em}.shop-card-meta p{margin:8px 0 0;font-family:"Yu Gothic","Hiragino Kaku Gothic ProN",sans-serif;font-size:13px;font-weight:700}
+.shop-card .shop-card-visual.has-shop-image{background:#004742}.shop-card-visual.has-shop-image::before{display:none}.shop-card-visual.has-shop-image img{width:100%;height:100%;object-fit:contain;display:block;padding:0;transform:translateY(-3%) scale(1.04)}
+.shop-card-visual.has-shop-image img.official-bar-card-photo{object-fit:cover;object-position:center 56%;transform:none}
+.shop-card-visual.has-shop-image img.shop-poster-card-photo{object-fit:cover;object-position:center 18%;transform:none}
+.shop-card-visual.has-shop-image img.focus-middle{object-position:center 50%}.shop-card-visual.has-shop-image img.focus-low{object-position:center 68%}
+.shop-text-visual{background:linear-gradient(145deg,#ff6bd6 0 38%,#8f63ff 38% 68%,#f4ff00 68%)}.shop-text-visual span{font-size:clamp(24px,2.7vw,39px);line-height:1.05;padding:22px}
 .shop-modal{display:none;position:fixed;inset:0;z-index:110;background:rgba(0,0,0,.62);backdrop-filter:blur(6px);padding:42px 18px}.shop-modal:target{display:grid;place-items:center}
 .shop-modal-panel{width:min(900px,100%);max-height:calc(100dvh - 84px);overflow-y:auto;overscroll-behavior:contain;border:3px solid var(--ink);border-radius:30px;background:#f1f1ed;box-shadow:14px 14px 0 rgba(0,0,0,.36);position:relative;scrollbar-gutter:stable}
 .shop-modal-close{position:sticky;z-index:20;top:14px;float:right;margin:14px 14px -66px 0;width:68px;height:52px;border:2px solid var(--ink);border-radius:18px;background:#e81818;color:var(--ink);display:grid;place-items:center;text-decoration:none;font-size:13px;font-weight:950;box-shadow:5px 5px 0 rgba(0,0,0,.22)}
-.shop-modal-content{padding:34px 40px 46px;clear:both}.shop-modal-eyebrow{font-size:11px;letter-spacing:.18em;margin-bottom:8px}.shop-modal-title{font-size:clamp(36px,6vw,66px);letter-spacing:-.08em;line-height:.95;margin:0 90px 24px 0}
+.shop-modal-content{padding:34px 40px 46px;clear:both}.shop-modal-eyebrow{font-size:11px;letter-spacing:.18em;margin-bottom:8px}.shop-modal-title{font-size:clamp(36px,6vw,66px);letter-spacing:-.08em;line-height:.95;margin:0 90px 24px 0}.shop-modal-title.long-title{font-size:clamp(30px,5vw,54px);line-height:1.08;letter-spacing:-.06em}
 .shop-hero-image{min-height:420px;border:2px solid var(--ink);border-radius:22px;overflow:hidden;display:grid;place-items:center;position:relative;text-align:center;margin-bottom:34px}.shop-hero-image.has-shop-image{background:#004742}.shop-hero-image.has-shop-image img{width:100%;height:100%;object-fit:contain;display:block;padding:0;transform:translateY(-3%) scale(1.08)}
 .shop-detail-block{border-top:2px solid var(--ink);padding:28px 0}.shop-detail-block h4{display:inline-block;margin:0 0 16px;padding:9px 14px;border-radius:999px;background:var(--acid);font-family:"Yu Gothic","Hiragino Kaku Gothic ProN",sans-serif;font-size:16px;line-height:1.5}.shop-detail-block p{margin:0;font-family:"Yu Gothic","Hiragino Kaku Gothic ProN",sans-serif;font-size:15px;font-weight:700;line-height:2}
 .shop-socials{display:flex;flex-wrap:wrap;gap:10px}.shop-social{display:inline-flex;align-items:center;gap:8px;color:var(--ink);text-decoration:none;border:2px solid var(--ink);border-radius:999px;padding:10px 15px;font-size:13px;font-weight:950;background:white}
 .shop-posters{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:18px}.shop-posters img{width:100%;height:260px;object-fit:cover;display:block;border:2px solid var(--ink);background:#356b50}
+.shop-hero-image.has-shop-image img.official-bar-hero{width:100%;height:auto;object-fit:contain;transform:none}
+.shop-hero-image.poster-hero{min-height:0;background:#111}.shop-hero-image.poster-hero img{width:100%;height:min(68vh,680px);object-fit:contain;display:block;transform:none}
+.shop-hero-text{min-height:360px;background:linear-gradient(145deg,#1a0320,#8f35c9 55%,#ff68cf);color:white;padding:36px}.shop-hero-text span{position:relative;z-index:1;font-size:clamp(34px,6vw,64px);line-height:1.1;font-weight:950;text-shadow:4px 4px 0 rgba(0,0,0,.4)}
+.shop-posters.single{grid-template-columns:minmax(0,520px);justify-content:center}.shop-posters img.shop-poster-full{height:auto;object-fit:contain}
 @media(max-width:980px){.shop-card-visual{height:240px}.shop-modal-content{padding:30px 30px 42px}.shop-hero-image{min-height:360px}}
 @media(max-width:640px){.shop-lineup{grid-template-columns:1fr;gap:16px}.shop-card-visual{height:250px;margin:12px 12px 0}.shop-modal{padding:18px 8px}.shop-modal-panel{max-height:calc(100dvh - 36px);border-radius:24px}.shop-modal-content{padding:24px 18px 34px}.shop-modal-close{top:10px;margin:10px 10px -58px 0;width:60px;height:46px}.shop-modal-title{margin-right:68px}.shop-hero-image{min-height:270px;border-radius:18px}.shop-detail-block{padding:23px 0}.shop-detail-block h4{font-size:14px}.shop-detail-block p{font-size:14px;line-height:1.9}.shop-posters{grid-template-columns:1fr;gap:14px}.shop-posters img{height:min(82vw,440px)}}
 
@@ -233,8 +241,130 @@ html{scroll-padding-top:150px}
     </div>
   </div>
 </div></div><div class="poster-stack"><div class="poster main"></div><div class="poster sub"></div><div class="qr-box">QR / INFO<br>COMING SOON</div></div></section>
-<section id="shop" class="section"><div class="section-head"><div><div class="section-kicker">MARKET / FOOD / CULTURE</div><h2>SHOP <span class="jp">出店</span></h2></div></div><div class="shop-lineup"><a class="shop-card" href="#shop-modal-01"><div class="shop-card-visual has-shop-image"><img src="assets/poteri-bakery-logo.png" alt="POTERI BAKERY TOKYO"></div><div class="shop-card-meta"><small>DONUT / SWEETS</small><h3>POTERI BAKERY TOKYO</h3><p>カスタードクリーム生ドーナツ専門店</p></div></a><article class="shop-card coming-soon" aria-label="出店情報準備中"><div class="shop-card-visual"><span>COMING<br>SOON</span></div><div class="shop-card-meta"><small>SHOP 02</small><h3>COMING SOON</h3></div></article><article class="shop-card coming-soon" aria-label="出店情報準備中"><div class="shop-card-visual"><span>COMING<br>SOON</span></div><div class="shop-card-meta"><small>SHOP 03</small><h3>COMING SOON</h3></div></article></div></section>
+<section id="shop" class="section">
+  <div class="section-head"><div><div class="section-kicker">MARKET / FOOD / CULTURE</div><h2>SHOP <span class="jp">出店</span></h2></div></div>
+  <div class="shop-lineup">
+    <a class="shop-card" href="#shop-modal-01"><div class="shop-card-visual has-shop-image"><img src="assets/poteri-bakery-logo.png" alt="POTERI BAKERY TOKYO"></div><div class="shop-card-meta"><small>DONUT / SWEETS</small><h3>POTERI BAKERY TOKYO</h3><p>カスタードクリーム生ドーナツ専門店</p></div></a>
+    <a class="shop-card" href="#shop-modal-02"><div class="shop-card-visual has-shop-image"><img class="official-bar-card-photo" src="assets/official-bar-image.jpg" alt="オフィシャルバー"></div><div class="shop-card-meta"><small>DRINK / OFFICIAL BAR</small><h3>オフィシャルバー</h3><p>キャンプの夜を彩るドリンクをご用意</p></div></a>
+    <a class="shop-card" href="#shop-modal-03"><div class="shop-card-visual has-shop-image"><img class="shop-poster-card-photo" src="assets/hitotoki-day.jpg" alt="HITOTOKI"></div><div class="shop-card-meta"><small>FOOD STAND</small><h3>HITOTOKI</h3><p>昼から夜まで楽しめるフェスごはん</p></div></a>
+    <a class="shop-card" href="#shop-modal-04"><div class="shop-card-visual has-shop-image"><img class="shop-poster-card-photo" src="assets/leos-nas.jpg" alt="LEO's BAGERとNa's TACOS"></div><div class="shop-card-meta"><small>BURGER / TACOS / WINE</small><h3 class="long-title">LEO's BAGER × Na's TACOS</h3><p>ブラジリアンバーガーとタコス</p></div></a>
+    <a class="shop-card" href="#shop-modal-05"><div class="shop-card-visual has-shop-image"><img class="shop-poster-card-photo" src="assets/dim-sum-stand.jpg" alt="チンチロ横の点心スタンド"></div><div class="shop-card-meta"><small>DIM SUM / GAME</small><h3 class="long-title">🎲チンチロ横の点心スタンド🥟</h3><p>アツアツの小籠包とチンチロ</p></div></a>
+    <a class="shop-card" href="#shop-modal-06"><div class="shop-card-visual has-shop-image"><img class="shop-poster-card-photo" src="assets/kenty-shokudo.jpg" alt="けんてぃ食堂"></div><div class="shop-card-meta"><small>RICE BOWL / FOOD</small><h3>けんてぃ食堂</h3><p>現役シェフが振る舞う得意料理</p></div></a>
+    <a class="shop-card" href="#shop-modal-07"><div class="shop-card-visual has-shop-image"><img class="shop-poster-card-photo" src="assets/lemon-girl.jpg" alt="レモンガール"></div><div class="shop-card-meta"><small>LEMON DRINK / GAME</small><h3>レモンガール 🍋</h3><p>チンチロで価格が決まる一杯</p></div></a>
+    <a class="shop-card" href="#shop-modal-08"><div class="shop-card-visual has-shop-image"><img class="shop-poster-card-photo" src="assets/omusubi-burger.jpg" alt="おむすびバーガー"></div><div class="shop-card-meta"><small>OMUSUBI / BURGER</small><h3>おむすびバーガー</h3><p>おむすび×バーガーの新感覚フード</p></div></a>
+    <a class="shop-card" href="#shop-modal-09"><div class="shop-card-visual has-shop-image"><img class="shop-poster-card-photo focus-low" src="assets/akanun-bar.jpg" alt="あかぬんBar"></div><div class="shop-card-meta"><small>COCKTAIL / MOCKTAIL</small><h3>あかぬんBar</h3><p>自家製素材を使ったオリジナルカクテル</p></div></a>
+    <a class="shop-card" href="#shop-modal-10"><div class="shop-card-visual has-shop-image"><img class="shop-poster-card-photo focus-middle" src="assets/shion.jpg" alt="ネオレトロスナック紫苑"></div><div class="shop-card-meta"><small>NEO RETRO SNACK</small><h3 class="long-title">ネオレトロスナック紫苑</h3><p>昭和の温もりと令和の煌めき</p></div></a>
+    <a class="shop-card" href="#shop-modal-11"><div class="shop-card-visual has-shop-image"><img class="shop-poster-card-photo focus-middle" src="assets/romance-bar.jpg" alt="恋愛無料案内所 深夜の駄菓子屋BAR"></div><div class="shop-card-meta"><small>LATE NIGHT BAR / LOVE TALK</small><h3 class="long-title">🍭恋愛無料案内所💗</h3><p>お酒と駄菓子で恋バナを</p></div></a>
+    <a class="shop-card" href="#shop-modal-12"><div class="shop-card-visual has-shop-image"><img class="shop-poster-card-photo" src="assets/iron-beads.jpg" alt="アイロンビーズ屋さん"></div><div class="shop-card-meta"><small>WORKSHOP / GOODS</small><h3>アイロンビーズ屋さん</h3><p>大人の感性で楽しむワークショップ</p></div></a>
+  </div>
+</section>
 <div id="shop-modal-01" class="shop-modal"><div class="shop-modal-panel"><a class="shop-modal-close" href="#shop">閉じる</a><div class="shop-modal-content"><div class="shop-modal-eyebrow">SHOP 01 / DONUT &amp; SWEETS</div><h3 class="shop-modal-title">POTERI BAKERY TOKYO</h3><div class="shop-hero-image has-shop-image"><img src="assets/poteri-bakery-logo.png" alt="POTERI BAKERY TOKYO ロゴ"></div><div class="shop-detail-block"><h4>自己紹介をお願いします</h4><p>「ケーキのような上品なドーナツを作りたい」という思いから始まった、熟練パティシエが監修した本格派のカスタードクリーム生ドーナツ専門店です。</p></div><div class="shop-detail-block"><h4>Re: Music Camp presented by 混ではどんなメニューや商品がならぶ予定ですか？</h4><p>ピスタチオ、エクレアの2種類がそれぞれ個数限定で販売予定です！</p></div><div class="shop-detail-block"><h4>ご来場されるお客様へメッセージをお願いします</h4><p>普段は三軒茶屋駅から徒歩2分のところにお店があります。素材にこだわった冷凍生ドーナツをお持ちしますので、ぜひご賞味ください！</p></div><div class="shop-detail-block"><h4>SNS・関連リンク</h4><div class="shop-socials"><a class="shop-social" href="https://poteribakery.com/" target="_blank" rel="noopener">公式サイト ↗</a><a class="shop-social" href="https://www.instagram.com/poteribakery_tokyo/" target="_blank" rel="noopener">Instagram ↗</a></div></div><div class="shop-detail-block"><h4>販売予定メニュー</h4><div class="shop-posters"><img src="assets/poteri-pistachio.png" alt="ピスタチオ 生ドーナツ"><img src="assets/poteri-eclair.png" alt="エクレア 生ドーナツ"></div></div></div></div></div>
+<div id="shop-modal-02" class="shop-modal">
+  <div class="shop-modal-panel">
+    <a class="shop-modal-close" href="#shop">閉じる</a>
+    <div class="shop-modal-content">
+      <div class="shop-modal-eyebrow">SHOP 02 / DRINK &amp; OFFICIAL BAR</div>
+      <h3 class="shop-modal-title">オフィシャルバー</h3>
+      <div class="shop-hero-image has-shop-image"><img class="official-bar-hero" src="assets/official-bar-image.jpg" alt="オフィシャルバー イメージ"></div>
+      <div class="shop-detail-block"><h4>自己紹介をお願いします</h4><p>ネイバーズ武蔵中原の友人2人で営みます！よろしくねー！</p></div>
+      <div class="shop-detail-block"><h4>Re: Music Camp presented by 混ではどんなメニューや商品がならぶ予定ですか？</h4><p>キャンプ場の夜を彩るドリンクを多数ご用意しています🍹<br><br>🥤 ソフトドリンク<br>コーラ／緑茶／水／イオンウォーターなど、遊び疲れた体にひと休憩を。<br><br>🍺 アルコール<br>レッドブルウォッカ、テキーラ、クライナー（いちじく／ベリー）、レモンサワーなど、キャンプの夜を盛り上げるラインナップをご用意！</p></div>
+      <div class="shop-detail-block"><h4>ご来場されるお客様へメッセージをお願いします</h4><p>普段は三軒茶屋駅から徒歩2分のところにお店があります。素材にこだわった冷凍生ドーナツをお持ちしますので、ぜひご賞味ください！</p></div>
+      <div class="shop-detail-block"><h4>メニュー表</h4><div class="shop-posters single"><img class="shop-poster-full" src="assets/official-bar-menu.jpg" alt="オフィシャルバー メニュー表"></div></div>
+    </div>
+  </div>
+</div>
+<div id="shop-modal-03" class="shop-modal">
+  <div class="shop-modal-panel"><a class="shop-modal-close" href="#shop">閉じる</a><div class="shop-modal-content">
+    <div class="shop-modal-eyebrow">SHOP 03 / FOOD STAND</div><h3 class="shop-modal-title">HITOTOKI<br><span style="font-size:.5em;letter-spacing:-.02em;">（ヒトトキ）</span></h3>
+    <div class="shop-hero-image poster-hero"><img src="assets/hitotoki-day.jpg" alt="HITOTOKI 昼メニュー"></div>
+    <div class="shop-detail-block"><h4>自己紹介をお願いします</h4><p>フードスタンド「HITOTOKI（ヒトトキ）」です。イベント出店を中心に活動しており、来場していただいたお客様にとって特別な「ひととき」になるような一皿をお届けしたいという想いで店名をつけました。がっつり系から夏らしい一品まで、その場を盛り上げるメニューを揃えてお伺いします！</p></div>
+    <div class="shop-detail-block"><h4>Re: Music Camp presented by 混ではどんなメニューや商品がならぶ予定ですか？</h4><p><strong>昼〜夜を通してご提供</strong><br>・夏野菜カレー 900円<br>彩り野菜がゴロゴロ入った、夏にぴったりのスパイスカレー。<br>・モツ煮 500円<br>じっくり煮込んだ、お酒との相性抜群の一品。<br>・ホットドッグ 400円<br>ガブっと食べやすい定番の軽食。<br><br><strong>夜のみ限定</strong><br>・二郎系まぜそば 1,100円<br>厚切りチャーシューにキャベツ・もやしをたっぷりのせた、二郎インスパイア系のがっつりまぜそば。キャンプの夜を締めくくる一杯としてぜひ。</p></div>
+    <div class="shop-detail-block"><h4>ご来場されるお客様へメッセージをお願いします</h4><p>音楽と自然に囲まれる特別な時間の中で、お腹も心も満たせるような一皿をご用意してお待ちしています。昼は夏野菜カレーやホットドッグで小腹を満たしつつ、夜が更けてきたら限定の二郎系まぜそばでガッツリと。フェスの一瞬一瞬を、美味しいご飯とともに楽しんでいただけたら嬉しいです。HITOTOKIのブースでお会いできるのを楽しみにしています！</p></div>
+    <div class="shop-detail-block"><h4>メニュー表</h4><div class="shop-posters"><img class="shop-poster-full" src="assets/hitotoki-day.jpg" alt="HITOTOKI 昼メニュー表"><img class="shop-poster-full" src="assets/hitotoki-night.jpg" alt="HITOTOKI 夜限定メニュー表"></div></div>
+  </div></div>
+</div>
+<div id="shop-modal-04" class="shop-modal">
+  <div class="shop-modal-panel"><a class="shop-modal-close" href="#shop">閉じる</a><div class="shop-modal-content">
+    <div class="shop-modal-eyebrow">SHOP 04 / BURGER・TACOS・WINE</div><h3 class="shop-modal-title long-title">LEO's BAGER<br>× Na's TACOS</h3>
+    <div class="shop-hero-image poster-hero"><img src="assets/leos-nas.jpg" alt="LEO's BAGERとNa's TACOS"></div>
+    <div class="shop-detail-block"><h4>自己紹介をお願いします</h4><p>キッチンカーでブラジリアンバーガーを売っているレオと、出張料理人の永田のペアで、ブラジリアンバーガーとタコスとワインを販売します！<br>皆さんが楽しく踊れるように、酔いとエネルギーを提供できればと思います！</p></div>
+    <div class="shop-detail-block"><h4>Re: Music Camp presented by 混ではどんなメニューや商品がならぶ予定ですか？</h4><p>バーガー、タコス、ナチュラルワインをお出しします！</p></div>
+    <div class="shop-detail-block"><h4>ご来場されるお客様へメッセージをお願いします</h4><p>腹ペコならブラジリアンバーガー！<br>小腹が空いたらタコス！<br>酔いが足りないならワイン！<br>是非！！</p></div>
+    <div class="shop-detail-block"><h4>SNS・関連リンク</h4><div class="shop-socials"><a class="shop-social" href="https://www.instagram.com/leosburgertruck?igsi=MTNuMjJmaDBiemxjdA==" target="_blank" rel="noopener">Instagram ↗</a></div></div>
+  </div></div>
+</div>
+<div id="shop-modal-05" class="shop-modal">
+  <div class="shop-modal-panel"><a class="shop-modal-close" href="#shop">閉じる</a><div class="shop-modal-content">
+    <div class="shop-modal-eyebrow">SHOP 05 / DIM SUM・GAME</div><h3 class="shop-modal-title long-title">🎲チンチロ横の<br>点心スタンド🥟</h3>
+    <div class="shop-hero-image poster-hero"><img src="assets/dim-sum-stand.jpg" alt="チンチロ横の点心スタンド"></div>
+    <div class="shop-detail-block"><h4>自己紹介をお願いします</h4><p>ネイバーズ武蔵中原のパルとカツヤです🐎<br>住み始めて4年が過ぎ、そろそろ潮時ということで、最後の思い出づくりに出店します✨<br><br>今回、思わず感動した小籠包を見つけたので、それを引っ提げて【点心スタンド】を開くことにしました🥟<br>さらに、SA/NEにチンチロ文化を広めた《極度のチンチロ狂・カツヤ》が、店舗の隣でひっそりとチンチロ屋さんも開店します🎲</p></div>
+    <div class="shop-detail-block"><h4>Re: Music Camp presented by 混ではどんなメニューや商品がならぶ予定ですか？</h4><p>アツアツの小籠包をメインに、ちまきやシュウマイなどの点心をご用意します！<br><br>🥟 小籠包 4個　450円<br>🥟 小籠包 10個　1,000円（グループでお得に！）<br>🌈 カラフル小籠包 5個　1,000円【数量限定】<br>🥢 ちまき 1個　350円<br>🥟 点心セット（小籠包3個・シュウマイ3個・ちまき1個）　900円<br><br>カラフル小籠包🌈は、カレー・シーフード・えび・しそバジル・チーズなど、色によって味もさまざま。見た目だけでなく、いろいろな味を楽しめます🩷</p></div>
+    <div class="shop-detail-block"><h4>ご来場されるお客様へメッセージをお願いします</h4><p><strong>フェスといえば、小籠包でしょ！！🥟</strong><br><br>音楽を楽しみながら食べるアツアツの小籠包は、きっといつも以上においしいはず🤤🧡<br>さらに、店舗の横では任意参加のチンチロも開催予定です🎲<br><br>点心を楽しみたい人も、カツヤと勝負したい人も、ぜひ遊びに来てください！2人で皆さんをお待ちしています。当日は一緒に食べて、振って、盛り上がりましょう😘</p></div>
+  </div></div>
+</div>
+<div id="shop-modal-06" class="shop-modal">
+  <div class="shop-modal-panel"><a class="shop-modal-close" href="#shop">閉じる</a><div class="shop-modal-content">
+    <div class="shop-modal-eyebrow">SHOP 06 / RICE BOWL・FOOD</div><h3 class="shop-modal-title">けんてぃ食堂</h3>
+    <div class="shop-hero-image poster-hero"><img src="assets/kenty-shokudo.jpg" alt="けんてぃ食堂"></div>
+    <div class="shop-detail-block"><h4>自己紹介をお願いします</h4><p>まずは初めまして、武蔵中原に住んでいる現役シェフけんてぃです！<br>普段はそこそこ有名な銀座のお店で働かせてもらっています。<br>去年に引き続き今年も出店します！今回は得意料理を振る舞いたいなと思います！！どうぞよろしく！！</p></div>
+    <div class="shop-detail-block"><h4>Re: Music Camp presented by 混ではどんなメニューや商品がならぶ予定ですか？</h4><p>チキンガパオライス、ルーローハン、オリジナルスナックと、ちょっとお酒も出します！</p></div>
+    <div class="shop-detail-block"><h4>ご来場されるお客様へメッセージをお願いします</h4><p>ここには関わったことがある人もいるかと思います。<br>「けんてぃ、ご飯作りに来てよ」と何度言われたことか…。<br>ようやく約束をちょっとだけ果たせる時が来ました！どうぞよろしくお願いします！！</p></div>
+    <div class="shop-detail-block"><h4>SNS・関連リンク</h4><div class="shop-socials"><a class="shop-social" href="https://www.instagram.com/chef_kenty?igsi=eDU2MTQ0dW04dGIw" target="_blank" rel="noopener">Instagram ↗</a></div></div>
+  </div></div>
+</div>
+<div id="shop-modal-07" class="shop-modal">
+  <div class="shop-modal-panel"><a class="shop-modal-close" href="#shop">閉じる</a><div class="shop-modal-content">
+    <div class="shop-modal-eyebrow">SHOP 07 / LEMON DRINK・GAME</div><h3 class="shop-modal-title">レモンガール 🍋</h3>
+    <div class="shop-hero-image poster-hero"><img src="assets/lemon-girl.jpg" alt="レモンガール"></div>
+    <div class="shop-detail-block"><h4>自己紹介をお願いします</h4><p>私たち「レモンガール」は、キャンプと音楽をもっと楽しんでもらうためにやってきました🍋<br>レモンサワー＆レモネードを片手に、チンチロで運試し！<br>果たしてあなたは無料を引けるのか！？🎲<br>ぜひレモンガールのブースに遊びに来てください🍋</p></div>
+    <div class="shop-detail-block"><h4>Re: Music Camp presented by 混ではどんなメニューや商品がならぶ予定ですか？</h4><p>🍋 レモンサワー<br>🍋 レモネード<br>を販売します！<br><br>さらにレモンガールでは、普通に買うだけじゃ終わらない！？🎲<br>チンチロで価格が決まるゲームシステムを導入します！<br><br>運が良ければ無料、悪ければ1,500円！？😂<br>ドキドキの一杯をぜひ楽しんでください🍋🔥<br><br>🎤 カラオケ1曲100円！<br>「あなたの歌声を聴かせて！」という企画もやります🎶</p></div>
+    <div class="shop-detail-block"><h4>ご来場されるお客様へメッセージをお願いします</h4><p>レモンガール2人で元気いっぱいお待ちしてます💛<br>Re: Music Campで一緒に乾杯しましょう！！🍋🌿🎶</p></div>
+  </div></div>
+</div>
+<div id="shop-modal-08" class="shop-modal">
+  <div class="shop-modal-panel"><a class="shop-modal-close" href="#shop">閉じる</a><div class="shop-modal-content">
+    <div class="shop-modal-eyebrow">SHOP 08 / OMUSUBI・BURGER</div><h3 class="shop-modal-title">おむすび<br>バーガー</h3>
+    <div class="shop-hero-image poster-hero"><img src="assets/omusubi-burger.jpg" alt="おむすびバーガー"></div>
+    <div class="shop-detail-block"><h4>自己紹介をお願いします</h4><p>平日は銀行員、土日祝はおむすび修行。<br>「いつか自分のおむすび屋さんを開く」という夢に向かって、おむすびと向き合っています。<br><br>今回は、れいの「おむすびの技術」と、元が培ってきた「バーガーの技術」を掛け合わせ、今までにない一品を作りました。<br>それぞれの“好き”と“得意”を掛け合わせた、ここでしか味わえないおむすびをぜひ楽しんでください！</p></div>
+    <div class="shop-detail-block"><h4>Re: Music Camp presented by 混ではどんなメニューや商品がならぶ予定ですか？</h4><p><strong>「おむすび × バーガー」</strong><br><br>今回ご用意するのは、<br>・厚焼き玉子 × スパム<br>・厚焼き玉子 × 明太マヨ<br>・プルコギ<br><br>それぞれの技術とこだわりを一つにした、おむすびなのにバーガー、バーガーなのにおむすびな新感覚フードです。</p></div>
+    <div class="shop-detail-block"><h4>ご来場されるお客様へメッセージをお願いします</h4><p>ここでしか出会えない、“おむすび×バーガー”を召し上がれ！</p></div>
+  </div></div>
+</div>
+<div id="shop-modal-09" class="shop-modal">
+  <div class="shop-modal-panel"><a class="shop-modal-close" href="#shop">閉じる</a><div class="shop-modal-content">
+    <div class="shop-modal-eyebrow">SHOP 09 / COCKTAIL・MOCKTAIL</div><h3 class="shop-modal-title">あかぬんBar</h3>
+    <div class="shop-hero-image poster-hero"><img src="assets/akanun-bar.jpg" alt="あかぬんBar"></div>
+    <div class="shop-detail-block"><h4>自己紹介をお願いします</h4><p>武蔵中原でアマチュアバーテンダーをしているあかぬんです！好きなリキュールはリモンチェッロです。</p></div>
+    <div class="shop-detail-block"><h4>Re: Music Camp presented by 混ではどんなメニューや商品がならぶ予定ですか？</h4><p>ワイワイと盛り上がる時と、落ち着きたい時のそれぞれに合わせたカクテルをご用意します！<br><br>自家製リモンチェッロや自家製ジンジャーシロップを使った、オリジナルカクテルをご用意します。もちろん、定番カクテルやモクテル（ノンアルコールカクテル）もご用意しております！</p></div>
+    <div class="shop-detail-block"><h4>ご来場されるお客様へメッセージをお願いします</h4><p>キャンプの雰囲気に合わせたカクテル・モクテルをチョイスしました！盛り上がりたい時や落ち着きたい時のお供に、ぜひお立ち寄りください🍸</p></div>
+  </div></div>
+</div>
+<div id="shop-modal-10" class="shop-modal">
+  <div class="shop-modal-panel"><a class="shop-modal-close" href="#shop">閉じる</a><div class="shop-modal-content">
+    <div class="shop-modal-eyebrow">SHOP 10 / NEO RETRO SNACK</div><h3 class="shop-modal-title long-title">ネオレトロ<br>スナック紫苑</h3>
+    <div class="shop-hero-image poster-hero"><img src="assets/shion.jpg" alt="ネオレトロスナック紫苑"></div>
+    <div class="shop-detail-block"><h4>自己紹介をお願いします</h4><p>昭和の温もりと、令和の洗練が交差するネオレトロスナック。<br>ディープでnostalgiaな空間で、こだわりの酒と色鮮やかなカクテル、心地よい音楽をお楽しみいただけます。<br>今夜も紫色の灯りをともしてお待ちしております。</p></div>
+    <div class="shop-detail-block"><h4>Re: Music Camp presented by 混ではどんなメニューや商品がならぶ予定ですか？</h4><p>カクテル、ハイボール、シャンパン、乾き物</p></div>
+    <div class="shop-detail-block"><h4>ご来場されるお客様へメッセージをお願いします</h4><p>座って飲めます。</p></div>
+    <div class="shop-detail-block"><h4>SNS・関連リンク</h4><div class="shop-socials"><a class="shop-social" href="https://www.instagram.com/neoretro_snack_shion?igsi=ZG80ZWp0ajZya2Ni&amp;utm_source=qr" target="_blank" rel="noopener">Instagram ↗</a></div></div>
+  </div></div>
+</div>
+<div id="shop-modal-11" class="shop-modal">
+  <div class="shop-modal-panel"><a class="shop-modal-close" href="#shop">閉じる</a><div class="shop-modal-content">
+    <div class="shop-modal-eyebrow">SHOP 11 / LATE NIGHT BAR・LOVE TALK</div><h3 class="shop-modal-title long-title">🍭🍸🔮 恋愛無料案内所<br><span style="font-size:.58em;">〜深夜の駄菓子屋BAR〜</span></h3>
+    <div class="shop-hero-image poster-hero"><img src="assets/romance-bar.jpg" alt="恋愛無料案内所 深夜の駄菓子屋BAR"></div>
+    <div class="shop-detail-block"><h4>自己紹介をお願いします</h4><p>元中原、新大阪のちっぴーです🙋‍♀️<br>暗くなったら、ふらっと立ち寄れる深夜BARやってます🍸🌙👩<br><br>知り合いがいなくても、話題がなくても大丈夫！<br>お酒と駄菓子をつまみながら、みんな大好き恋バナしましょ〜💗</p></div>
+    <div class="shop-detail-block"><h4>Re: Music Camp presented by 混ではどんなメニューや商品がならぶ予定ですか？</h4><p>💘 恋愛相談・脈あり判定 → 無料<br>🔮 AI恋占い → 300円<br>🍺 缶チューハイ → 500円<br>🍾 チャミスル → 800円<br>🍬 駄菓子もあります！</p></div>
+    <div class="shop-detail-block"><h4>ご来場されるお客様へメッセージをお願いします</h4><p>恋の悩みがある人も、ない人も大歓迎🙌<br>自分の恋愛相談をするもよし、人の恋愛相談に勝手に参加するもよし。笑<br>一人でもグループでもお気軽に🫶</p></div>
+  </div></div>
+</div>
+<div id="shop-modal-12" class="shop-modal">
+  <div class="shop-modal-panel"><a class="shop-modal-close" href="#shop">閉じる</a><div class="shop-modal-content">
+    <div class="shop-modal-eyebrow">SHOP 12 / WORKSHOP・GOODS</div><h3 class="shop-modal-title long-title">アイロンビーズ<br>屋さん</h3>
+    <div class="shop-hero-image poster-hero"><img src="assets/iron-beads.jpg" alt="アイロンビーズ屋さん"></div>
+    <div class="shop-detail-block"><h4>自己紹介をお願いします</h4><p>小さい頃に作ったアイロンビーズが最近流行っているので、懐かしみつつ大人の感性で作品作りしませんか？<br><br>目印チャームやRe: Music Camp presented by 混の思い出として、特別なパッケージも用意する予定です！<br>別途、夜のフェスで使えるアイテムも販売予定なので、ぜひお気軽にお立ち寄りください😊</p></div>
+  </div></div>
+</div>
 <section id="artist" class="section"><div class="section-head"><div><div class="section-kicker">LIVE / DJ / PERFORMANCE</div><h2>ARTIST <span class="jp">アーティスト</span></h2></div></div>
 
 <div class="artist-lineup">
