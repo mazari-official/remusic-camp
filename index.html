@@ -37,6 +37,7 @@ details{border:2px solid var(--ink);border-radius:20px;background:rgba(255,255,2
 .menu-toggle span:nth-child(2){top:25px}
 .menu-toggle span:nth-child(3){top:34px}
 .mobile-menu{display:none;position:fixed;top:108px;right:14px;left:14px;z-index:39;border:3px solid var(--ink);border-radius:28px;background:rgba(244,255,0,.96);box-shadow:10px 10px 0 rgba(0,0,0,.18);padding:18px}
+.mobile-menu{max-height:calc(100dvh - 122px);overflow-y:auto}
 .mobile-menu a{display:flex;justify-content:space-between;align-items:center;color:var(--ink);text-decoration:none;border-bottom:2px dotted var(--ink);padding:13px 6px;font-size:18px;font-weight:950;letter-spacing:-.04em}
 .mobile-menu a:last-child{border-bottom:none}
 #menu-open{position:absolute;opacity:0;pointer-events:none}
@@ -103,6 +104,8 @@ html{scroll-padding-top:150px}
 .adc-card-photo{transform:translateY(-8px) scale(1.03);transform-origin:center}
 .nakahara-brothers-photo{transform:translateY(-5%)}
 .yoto-card-photo{object-fit:cover!important;object-position:center 28%}
+.performer-photo{object-fit:cover!important;object-position:center 42%;filter:none!important}
+.performer-modal-title{padding-right:70px;line-height:1.18!important;font-size:clamp(32px,5vw,48px)!important}
 .artist-card-visual span{font-size:72px;letter-spacing:-.12em;font-weight:950;opacity:.9}
 .artist-card-name{padding:16px 18px 18px;font-size:24px;line-height:.95;letter-spacing:-.06em;text-align:center;font-weight:950}
 .artist-card:hover{transform:translateY(-3px)}
@@ -212,6 +215,7 @@ html{scroll-padding-top:150px}
     <div class="mobile-menu">
       <a href="#shop" onclick="document.getElementById('menu-open').checked=false">出店 <span>→</span></a>
       <a href="#artist" onclick="document.getElementById('menu-open').checked=false">アーティスト <span>→</span></a>
+      <a href="#performer" onclick="document.getElementById('menu-open').checked=false">パフォーマー <span>→</span></a>
       <a href="#timetable" onclick="document.getElementById('menu-open').checked=false">タイムテーブル <span>→</span></a>
       <a href="#ticket" onclick="document.getElementById('menu-open').checked=false">チケット <span>→</span></a>
       <a href="#camp" onclick="document.getElementById('menu-open').checked=false">キャンプ <span>→</span></a>
@@ -365,7 +369,7 @@ html{scroll-padding-top:150px}
     <div class="shop-detail-block"><h4>自己紹介をお願いします</h4><p>小さい頃に作ったアイロンビーズが最近流行っているので、懐かしみつつ大人の感性で作品作りしませんか？<br><br>目印チャームやRe: Music Camp presented by 混の思い出として、特別なパッケージも用意する予定です！<br>別途、夜のフェスで使えるアイテムも販売予定なので、ぜひお気軽にお立ち寄りください😊</p></div>
   </div></div>
 </div>
-<section id="artist" class="section"><div class="section-head"><div><div class="section-kicker">LIVE / DJ / PERFORMANCE</div><h2>ARTIST <span class="jp">アーティスト</span></h2></div></div>
+<section id="artist" class="section"><div class="section-head"><div><div class="section-kicker">LIVE / DJ / MUSIC</div><h2>ARTIST <span class="jp">アーティスト</span></h2></div></div>
 
 <div class="artist-lineup">
   <a class="artist-card" href="#artist-modal-01">
@@ -570,6 +574,27 @@ html{scroll-padding-top:150px}
 </div>
 </section>
 
+<section id="performer" class="section">
+  <div class="section-head"><div><div class="section-kicker">COMEDY / LIVE PERFORMANCE</div><h2>PERFORMER <span class="jp">パフォーマー</span></h2></div></div>
+  <div class="artist-lineup">
+    <a class="artist-card" href="#performer-modal-01">
+      <div class="artist-card-visual has-photo group-frame"><img class="artist-photo performer-photo" src="assets/performer-gakki-dance.jpg" alt="楽器もダンスもできないので"></div>
+      <div class="artist-card-name">楽器もダンスもできないので</div>
+    </a>
+  </div>
+  <div id="performer-modal-01" class="artist-modal">
+    <div class="artist-modal-card">
+      <a class="artist-modal-close" href="#performer">閉じる</a>
+      <div class="artist-modal-text">
+        <div class="section-kicker">PERFORMER / COMEDY</div>
+        <h3 class="performer-modal-title">楽器もダンスもできないので</h3>
+        <p>初対面で「漫才しよ」って言ったら、いけました。まだ通算10回会ってません。</p>
+      </div>
+      <div class="artist-modal-image has-photo group-frame"><img class="artist-photo performer-photo" src="assets/performer-gakki-dance.jpg" alt="楽器もダンスもできないので"></div>
+    </div>
+  </div>
+</section>
+
 <section id="timetable" class="section"><div class="section-head"><div><div class="section-kicker">2 DAYS PROGRAM</div><h2>TIME<br>TABLE <span class="jp">タイムテーブル</span></h2></div><p class="section-desc">タイムテーブルは現在調整中です。出演者・出店者・会場内コンテンツの確定後、こちらの欄で公開します。</p></div><div class="timetable"><div class="time-row" style="grid-template-columns:1fr;min-height:180px;"><div style="border-right:none;justify-content:center;text-align:center;font-size:30px;">COMING SOON<br><span style="font-size:14px;letter-spacing:.08em;margin-left:14px;">タイムテーブル準備中</span></div></div></div></section>
 <section id="ticket" class="section"><div class="section-head"><div><div class="section-kicker">ENTRANCE / RENTAL</div><h2>TICKET <span class="jp">チケット</span></h2></div><p class="section-desc">入場チケットとキャンプ用品のレンタルを販売中です。入場チケットは日帰り・宿泊共通でご利用いただけます。</p></div><div class="ticket-catalog"><div class="big-ticket entry-ticket"><div class="entry-ticket-main"><span class="ticket-status">NOW ON SALE</span><div><h3>ENTRY<br>PASS</h3><p class="entry-ticket-sub">入場チケット<br>日帰り・宿泊共通</p></div></div><div class="entry-ticket-side"><div class="entry-price"><small>TICKET PRICE</small><strong>¥8,500</strong><p>イベントへの入場に必要なチケットです。日帰り参加・キャンプ宿泊のどちらでも共通です。</p></div><a class="btn" href="https://peatix.com/event/5039844" target="_blank" rel="noopener">入場チケットを購入する ↗</a></div></div><div class="rental-panel"><div class="rental-panel-head"><h3>RENTAL<br>ITEMS</h3><p>レンタル品もPeatixのチケット購入ページからお申し込みいただけます。最新の在庫状況は購入ページをご確認ください。</p></div><div class="rental-grid"><a class="rental-card" href="https://peatix.com/event/5039844" target="_blank" rel="noopener"><span class="rental-index">01 / RENTAL</span><span class="rental-arrow">↗</span><h4>椅子レンタル</h4><strong class="rental-price">¥1,000</strong></a><a class="rental-card" href="https://peatix.com/event/5039844" target="_blank" rel="noopener"><span class="rental-index">02 / RENTAL</span><span class="rental-arrow">↗</span><h4>3〜4人用<br>テントレンタル</h4><strong class="rental-price">¥9,000</strong></a><a class="rental-card" href="https://peatix.com/event/5039844" target="_blank" rel="noopener"><span class="rental-index">03 / RENTAL</span><span class="rental-arrow">↗</span><h4>寝袋レンタル</h4><strong class="rental-price">¥1,500</strong></a><a class="rental-card" href="https://peatix.com/event/5039844" target="_blank" rel="noopener"><span class="rental-index">04 / RENTAL</span><span class="rental-arrow">↗</span><h4>フロアマット<br>（シングル）レンタル</h4><strong class="rental-price">¥1,000</strong></a><a class="rental-card" href="https://peatix.com/event/5039844" target="_blank" rel="noopener"><span class="rental-index">05 / RENTAL</span><span class="rental-arrow">↗</span><h4>タープレンタル</h4><strong class="rental-price">¥3,500</strong></a><a class="rental-card" href="https://peatix.com/event/5039844" target="_blank" rel="noopener"><span class="rental-index">06 / RENTAL</span><span class="rental-arrow">↗</span><h4>LEDライト<br>レンタル</h4><strong class="rental-price">¥1,000</strong></a></div><div class="rental-cta"><a class="btn" href="https://peatix.com/event/5039844" target="_blank" rel="noopener">チケット・レンタルを購入する ↗</a></div></div></div></section>
 <section id="camp" class="section"><div class="section-head"><div><div class="section-kicker">STAY IN THE FIELD</div><h2>CAMP <span class="jp">キャンプ</span></h2></div><p class="section-desc">会場は、千葉県勝浦市のREWILD GREEN FIELD CAMP。33,000㎡の広大な土地に天然芝が広がるフリーサイトキャンプ場です。</p></div><div class="grid-3" style="grid-template-columns:repeat(2,1fr);"><article class="card"><span class="label">VENUE</span><h3>REWILD GREEN FIELD CAMP</h3><p>千葉県勝浦市大楠1537。ふかふかの天然芝が広がるフリーサイトで、星空も楽しめるキャンプ場です。</p><div class="btns"><a class="btn" href="https://www.nap-camp.com/chiba/14307" target="_blank" rel="noopener">キャンプ場サイトを見る</a></div></article><article class="card"><span class="label">FACILITY</span><h3>トイレ・シャワー完備</h3><p>管理棟内に男女別ウォシュレット付トイレ、温水シャワー、炊事場などの水回り設備があります。</p></article></div></section>
@@ -593,6 +618,13 @@ html{scroll-padding-top:150px}
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {
+  const desktopArtistLink = document.querySelector('.nav-links a[href="#artist"]');
+  if (desktopArtistLink && !document.querySelector('.nav-links a[href="#performer"]')) {
+    const performerLink = document.createElement('a');
+    performerLink.href = '#performer';
+    performerLink.textContent = 'パフォーマー';
+    desktopArtistLink.insertAdjacentElement('afterend', performerLink);
+  }
   const menuCheckbox = document.getElementById('menu-open');
   const menuLinks = document.querySelectorAll('.mobile-menu a[href^="#"], .nav-links a[href^="#"], .guide-menu a[href^="#"]');
 
