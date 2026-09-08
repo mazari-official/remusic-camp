@@ -1,6 +1,7 @@
 # Re: Music Camp Website
 
 今回の更新：
+- MAP欄に会場マップ画像を追加し、場内道路と各エリアの位置を掲載
 - ARTIST一覧に「Ninja.jp」「SHUNYA」を写真・紹介文付きで追加
 - Ninja.jpのInstagram・YouTubeリンクを詳細画面に設置
 - オフィシャルバー詳細から誤って掲載されていた来場者向けメッセージを削除
